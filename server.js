@@ -59,7 +59,7 @@ app.use('/login',async(req,res)=>{
 })
 
 app.use("/getalluser",async (req,res)=>{
-    res.status(200).send({"message":"Request Received");
+    res.status(200).send({"message":"Request Received"});
 })
 
 app.listen(3000,(err)=>{
