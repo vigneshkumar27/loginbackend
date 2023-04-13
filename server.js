@@ -59,8 +59,7 @@ app.use('/login',async(req,res)=>{
 })
 
 app.use("/getalluser",async (req,res)=>{
-    const users = await User.find();
-    res.status(200).send(users);
+    res.status(200).send({"message":"Request Received");
 })
 
 app.listen(3000,(err)=>{
