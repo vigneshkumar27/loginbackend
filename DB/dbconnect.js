@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = "mongodb+srv://mongodb.net/Auth?retryWrites=true&w=majority";
+const url = "mongodb+srv://admin:root@cluster0.8yvsnml.mongodb.net/Auth?retryWrites=true&w=majority"
 const dbcon = ()=>{
     mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true});
     mongoose.connection.on("error",(err)=>{
