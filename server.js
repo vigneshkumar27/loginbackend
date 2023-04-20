@@ -21,6 +21,10 @@ const User = require("./DB/Models/user")
 
 dbcon();
 
+app.get("/",async(req,res)=>{
+  res.json({"message":"Request Received success message"}) 
+})
+
 app.post('/register',async (req,res)=>{
    const userexists = await User.findOne({"email":req.body.email})
    if(userexists){
